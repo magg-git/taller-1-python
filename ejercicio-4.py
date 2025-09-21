@@ -1,8 +1,10 @@
-print("Ingrese números para sumar. Escriba 0 para terminar.")
 
+num = int(input("Ingrese un número: "))
+suma = 0
 
-while num != 0:
-    num = int(input("Ingrese un número: "))
-    sum += num
+if num != 0:
+    while num != 0:
+        suma += num
+        num = int(input("Ingrese un número: "))
 
-print("la suma total es: ", sum)
+print("La suma total es: ", suma)

@@ -1,12 +1,14 @@
 import random
 
-num_secreto = random.rendint (1, 100)
+num_secreto = random.randint(1, 100) #el randit nos indica el rango del que queremos que se genere el número aleatorio
 
-num_usuario = int(input("ingrese un numero del 1 al 100."))
+num_usuario = 0
 
-if num_usuario < num_secreto:
-    print("el numero secreto es mayor.")
-elif num_usuario > num_secreto:
-    print("el numero secreto es menor.")
-else:
-    print("¡Felicitaciones! El numero secreto es igual al número que ingresaste ", num_secreto)
+while num_usuario != num_secreto:
+    num_usuario = int(input("Ingrese un numero del 1 al 100: "))      
+    if num_usuario < num_secreto:
+        print("Muy bajo.")
+    elif num_usuario > num_secreto:
+        print("Muy alto.")
+
+print("¡Felicitaciones! El numero secreto es: ", num_secreto)
