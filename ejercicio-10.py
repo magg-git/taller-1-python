@@ -2,7 +2,7 @@ saldo = 1000
 opcion = 0
 
 while opcion != 4:
-
+    
     print("Bienvenido(a) a TuBanco")
 
     print("--MENÚ--")
